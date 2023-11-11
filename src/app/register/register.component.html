@@ -1,19 +1,40 @@
-﻿<!-- <div class="col-md-12">
+﻿<div class="col-md-12">
 
   <div class="card card-container">
-
     <img
       id="profile-img"
       src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
       class="profile-img-card"
     />
-    <h2 class="create-account">Sign In</h2>
+    <h2 class="create-account">Create Account</h2>
     <form    
     name="form"
     (ngSubmit)="f.form.valid && onSubmit()"
       #f="ngForm"
       novalidate
     >
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          name="username"
+          [(ngModel)]="form.username"
+          required
+          minlength="3"
+          maxlength="20"
+          #username="ngModel"
+          placeholder="Enter Username"
+        />
+        <div class="alert-danger" *ngIf="username.errors && f.submitted">
+          <div *ngIf="username.errors['required']">Username is required</div>
+          <div *ngIf="username.errors['minlength']">
+            Username must be at least 3 characters
+          </div>
+          <div *ngIf="username.errors['maxlength']">
+            Username must be at most 20 characters
+          </div>
+        </div>
+      </div>
       <div class="form-group">
         <input
           type="email"
@@ -52,19 +73,11 @@
       </div>
       <div class="form-group">
         <button class="btn btn-primary btn-block">
-          <p>Sign In </p></button>
+          <p>Sign Up </p></button>
       </div>
 
-      <a href="register">Login</a>  
+      <a href="">Sign In To Your Account</a>  
     </form>
+
   </div>
-
-  
-</div>
-<div class="container">
-  <router-outlet></router-outlet>
-</div> -->
-
-<div class="container">
-  <router-outlet></router-outlet>
 </div>

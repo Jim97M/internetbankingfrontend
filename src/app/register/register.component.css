@@ -1,0 +1,102 @@
+.label {
+    margin-top: 20px;
+    font-size: medium;
+     font-weight: 500;
+  }
+  
+  .card-container.card {
+    max-width: 480px !important;
+    margin-top: 100px;
+    padding: 40px 40px;
+  }
+  
+  .form-group {
+    position: relative; /* Added to make sure the icons are positioned relative to the form group */
+  }
+  
+  .form-control {
+    width: 300px; /* Adjust the width based on your preference */
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(228, 228, 228);
+    border-width: 0.8px;
+    margin-top: 20px;
+    padding-left: 40px; /* Added padding to accommodate the icon */
+  
+    /* Style for placeholder text */
+    &::placeholder {
+      color: #999; /* Adjust the color based on your preference */
+      margin-left: 5px; /* Adjust the left margin based on your preference */
+    }
+  }
+  
+  
+  .input-group-prepend {
+    position: absolute;
+    top: 62%;
+    transform: translateY(-50%);
+    left: 60px; /* Adjust this value based on your preference */
+  }
+  
+  
+  .card {
+    background-color: #fffcfc;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-img-card {
+    width: 146px;
+    height: 146px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .form-control {
+    width: 340px;
+    margin-left: 52px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(228, 228, 228);
+    border-width: 0.8px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: flex;
+    width: 350px;
+    background-color: rgb(68, 68, 250);
+    border: none;
+    margin-top: 40px;
+    margin-left: 52px;
+    height: 55px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #f7f7f7;
+    font-weight: 500;
+  }
+  
+  .create-account {
+  margin-left: 130px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #f7f7f7;
+    font-weight: 500;
+  }
