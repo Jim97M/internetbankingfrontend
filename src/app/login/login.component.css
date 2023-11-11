@@ -7,11 +7,23 @@
 .card-container.card {
   max-width: 480px !important;
   margin-top: 100px;
+  border-radius: 10px;
   padding: 40px 40px;
 }
 
 .form-group {
   position: relative; /* Added to make sure the icons are positioned relative to the form group */
+}
+
+a {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-left: 30px;
+  font-size: small;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0C3CE3;
 }
 
 .form-control {
@@ -28,6 +40,18 @@
     color: #999; /* Adjust the color based on your preference */
     margin-left: 5px; /* Adjust the left margin based on your preference */
   }
+}
+
+h6 {
+  font-size: small;
+}
+
+.bottom-text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 90px;
+  margin-top: 20px;
 }
 
 
@@ -74,7 +98,7 @@
 
 .btn {
   display: flex;
-  width: 350px;
+  width: 380px;
   background-color: rgb(68, 68, 250);
   border: none;
   margin-top: 40px;
@@ -92,7 +116,7 @@ p {
 }
 
 .create-account {
-margin-left: 130px;
+margin-left: 190px;
 }
 
 p {
